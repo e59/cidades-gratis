@@ -28,9 +28,12 @@ class Cidades {
 
             $codigo = substr($li->attr('id'), 2);
 
+            $a = $li->filter('a');
+
             $ufs[] = [
                 'codigo' => $codigo,
-                'uf' => $li->filter('a')->html()
+                'uf' => $a->html(),
+                'nome' => $a->attr('title'),
             ];
 
         }
