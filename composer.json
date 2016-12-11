@@ -10,9 +10,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.0",
         "ext-curl":"*",
-        "fabpot/goutte": "2.0.*@dev"
+        "fabpot/goutte": ">=2 <4"
     },
     "autoload": {
         "psr-4": {
@@ -29,6 +29,5 @@
         "jansenfelipe/cpf-gratis": "Permite consulta de CPF no site da receita",
         "jansenfelipe/cep-gratis": "Permite consulta de CEP no site dos Correios",
         "jansenfelipe/nfephp-serialize": "Transforme NFe(xml) em objetos PHP e vice-versa"
-    },
-    "minimum-stability": "dev"
+    }
 }
